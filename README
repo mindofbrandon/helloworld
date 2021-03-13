@@ -1,0 +1,34 @@
+# Project 1: Multi-Process Programming
+Authors: Brandon Zuniga, Bob The Builder, John Smith 
+
+Project 1 is the first project for Operating Systems to review fundamentals of multiprocessing.
+
+This program will:
+1. Generate multiple processes using the UNIX fork() function
+2. Handle their return using wait()
+3. Generate output from both parent and child processes to demonstrate the correctness of your approach.
+
+Notes: 
+* The program was built and ran in CLion, including the makefiles
+* The program was tested on Ubuntu 20 and 18.04
+* CMakeLists.txt required `target_link_libraries(test2 m)` to run `sqrt` function in test case 2
+* CMake 3.10 or higher is required.
+## Installation
+1. Unzip the archive file and extract the contents into a folder in a directory of your choosing.
+
+# Running The Program
+## If makefile already exists upon installation:
+
+1. Open up your terminal console of choice (stable version uses Ubuntu 18's MATE Terminal or Ubuntu 20 with terminator).
+2. Change directory to the folder where the files are located (`cd Directory/folder/PROJECTLOCATION`
+3. Change directory to /cmake-build-debug `cd /cmake-build-debug`
+4. Type `./proj1 x` where x is the number of child processes desired to run the program. (NOTE: The maximum number of child processes is 25)
+## If you need to create a makefile upon installation:
+
+1. Open up your terminal console of choice (stable version uses Ubuntu 18's MATE Terminal or Ubuntu 20 with terminator).
+2. Change directory to the folder where the files are located (`cd Directory/folder/PROJECTLOCATION`).
+3. Change directory to /cmake-build `cd /cmake-build`
+4. Create the makefile from terminal by running `cmake .. -G"Unix Makefiles"`
+5. Once build files have been written, type `make` into your terminal to compile the program.
+6. Type `./proj1 x` where x is the number of child processes desired to run the program. (NOTE: The maximum number of child processes is 25)
+7. When finished with program, type `make clean` to remove the object files from the folder.
